@@ -96,3 +96,10 @@ Then open `http://localhost:8000`.
 ├── robots.txt
 └── sitemap.xml
 ```
+
+## Verified public links
+
+- Email: mbahrami@luiss.it
+- LinkedIn: https://www.linkedin.com/in/maziyar-bahrami-a68194337/
+- Google Scholar: https://scholar.google.com/citations?hl=en&user=Ahew2LoAAAAJ
+- GitHub: https://github.com/mazbahrami
