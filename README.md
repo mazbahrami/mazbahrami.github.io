@@ -30,3 +30,11 @@ For frequent publishing, a later migration to Astro/MDX will make this process a
 ## Update the CV
 
 Replace `assets/documents/Maziyar-Bahrami-CV.pdf` with a new PDF using the same filename.
+
+
+## Version 6
+
+- Merges the former Background and Experience pages into one integrated academic–professional narrative at `/about/`.
+- Keeps `/experience/` as a redirect so older links remain useful.
+- Removes Experience from the primary navigation.
+- Adds a combined chronological journey, capability framework, and clearer methods section.
