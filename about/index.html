@@ -7,11 +7,28 @@
 <meta content="summary_large_image" name="twitter:card"/><meta content="Background | Maziyar Bahrami" name="twitter:title"/><meta content="The integrated academic and professional background of Maziyar Bahrami across engineering, finance, business analysis, data science, blockchain, Information Systems, and AI governance." name="twitter:description"/><meta content="https://mazbahrami.github.io/assets/images/og-default.png" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;display=swap" rel="stylesheet"/>
 <link href="/assets/images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/site.webmanifest" rel="manifest"/><link href="/assets/css/style.css" rel="stylesheet"/>
+
+<style>
+/* Background page: text-first introduction without a repeated portrait */
+.background-intro-no-photo{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:76px;align-items:start}
+.background-intro-no-photo .background-intro-copy{max-width:760px;padding-top:0}
+.background-fact-panel{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:20px;padding:28px;box-shadow:0 14px 40px rgba(20,42,47,.06)}
+.background-fact-panel>.eyebrow{margin-bottom:20px}
+.background-fact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.background-fact-item{padding:17px 15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:92px;display:flex;flex-direction:column;justify-content:center}
+.background-fact-item span{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--muted);margin-bottom:6px}
+.background-fact-item strong{font-family:var(--serif);font-size:1.02rem;line-height:1.35}
+.background-profile-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.background-profile-links a{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border:1px solid var(--line);border-radius:9px;background:var(--bg);font-size:.78rem;font-weight:700;color:var(--muted)}
+.background-profile-links a:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:900px){.background-intro-no-photo{grid-template-columns:1fr;gap:42px}.background-intro-no-photo .background-intro-copy{max-width:none}.background-fact-panel{max-width:680px}}
+@media(max-width:560px){.background-fact-grid{grid-template-columns:1fr}.background-profile-links{display:grid;grid-template-columns:1fr 1fr}.background-profile-links a{width:100%}}
+</style>
 <script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'light';</script></head><body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container nav-wrap">
 <a aria-label="Maziyar Bahrami home" class="brand" href="/"><span class="brand-mark">MB</span><span class="brand-name">Maziyar Bahrami</span></a>
 <button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
-<nav aria-label="Primary navigation" class="site-nav" id="site-nav"><a aria-current="page" class="active" href="/about/">Background</a><a href="/research/">Research</a><a href="/projects/">Projects</a><a href="/writing/">Writing</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav"><a aria-current="page" class="active" href="/about/">Background</a><a href="/research/">Research</a><a href="/projects/">Projects</a><a href="/writing/">Writing</a><a href="/learning-r/">Learning R</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></nav>
 <div class="nav-actions"><a aria-label="GitHub profile" class="icon-link" href="https://github.com/mazbahrami" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 .7A11.3 11.3 0 0 0 8.4 22.8c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-6A4.7 4.7 0 0 1 6 8.5c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.6 3.4-1.2 3.4-1.2.7 1.6.3 2.9.1 3.2a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.9 5.7-5.6 6 .4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path></svg></a><button aria-label="Toggle light and dark mode" class="theme-toggle" type="button"><span class="sun">☼</span><span class="moon">☾</span></button></div>
 </div></header><main id="main">
 <section class="page-hero background-hero">
@@ -22,22 +39,7 @@
 </div>
 </section>
 <section class="section-pad background-introduction">
-<div class="container background-overview">
-<aside class="background-profile">
-<img alt="Portrait of Maziyar Bahrami" class="about-portrait" height="1125" src="/assets/images/maziyar-bahrami-profile.webp" width="900"/>
-<div class="aside-card background-facts">
-<span>Based In</span><strong>Rome, Italy</strong>
-<span>Current Role</span><strong>PhD Researcher in Management</strong>
-<span>Institution</span><strong>Luiss Guido Carli University</strong>
-<span>Primary Field</span><strong>Information Systems</strong>
-</div>
-<div class="aside-social-links">
-<a href="mailto:mbahrami@luiss.it">Email</a>
-<a href="https://www.linkedin.com/in/maziyar-bahrami-a68194337/" rel="noopener" target="_blank">LinkedIn ↗</a>
-<a href="https://scholar.google.com/citations?hl=en&amp;user=Ahew2LoAAAAJ" rel="noopener" target="_blank">Google Scholar ↗</a>
-<a href="https://github.com/mazbahrami" rel="noopener" target="_blank">GitHub ↗</a>
-</div>
-</aside>
+<div class="container background-intro-no-photo">
 <div class="background-intro-copy prose">
 <p class="eyebrow">A Connected Story</p>
 <h2>Different Fields, One Continuing Question</h2>
@@ -49,6 +51,21 @@
 <a class="btn secondary" href="/research/">Explore My Research</a>
 </div>
 </div>
+<aside class="background-fact-panel" aria-label="Profile at a glance">
+<p class="eyebrow">Profile at a Glance</p>
+<div class="background-fact-grid">
+<div class="background-fact-item"><span>Based In</span><strong>Rome, Italy</strong></div>
+<div class="background-fact-item"><span>Current Role</span><strong>PhD Researcher in Management</strong></div>
+<div class="background-fact-item"><span>Institution</span><strong>Luiss Guido Carli University</strong></div>
+<div class="background-fact-item"><span>Primary Field</span><strong>Information Systems</strong></div>
+</div>
+<div class="background-profile-links">
+<a href="mailto:mbahrami@luiss.it">Email</a>
+<a href="https://www.linkedin.com/in/maziyar-bahrami-a68194337/" rel="noopener" target="_blank">LinkedIn ↗</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=Ahew2LoAAAAJ" rel="noopener" target="_blank">Scholar ↗</a>
+<a href="https://github.com/mazbahrami" rel="noopener" target="_blank">GitHub ↗</a>
+</div>
+</aside>
 </div>
 </section>
 <section class="section-pad surface-section" id="professional-journey">
@@ -206,6 +223,6 @@
 </section>
 </main><footer class="site-footer"><div class="container footer-grid">
 <div><a class="footer-brand" href="/">Maziyar Bahrami</a><p>Research, practice, and data across technology, organizations, and society.</p></div>
-<div class="footer-links"><a href="/about/">Background</a><a href="/research/">Research</a><a href="/projects/">Projects</a><a href="/writing/">Writing</a><a href="/contact/">Contact</a></div>
+<div class="footer-links"><a href="/about/">Background</a><a href="/research/">Research</a><a href="/projects/">Projects</a><a href="/writing/">Writing</a><a href="/learning-r/">Learning R</a><a href="/contact/">Contact</a></div>
 <div class="footer-social"><a href="mailto:mbahrami@luiss.it">Email</a><a href="https://www.linkedin.com/in/maziyar-bahrami-a68194337/" rel="noopener" target="_blank">LinkedIn <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><a href="https://scholar.google.com/citations?hl=en&amp;user=Ahew2LoAAAAJ" rel="noopener" target="_blank">Google Scholar <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><a href="https://github.com/mazbahrami" rel="noopener" target="_blank">GitHub <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><span class="muted">Rome, Italy</span></div>
 </div><div class="container footer-bottom"><span>© <span data-year="">2026</span> Maziyar Bahrami</span><span>Rome, Italy</span></div></footer><script defer="" src="/assets/js/main.js"></script></body></html>
