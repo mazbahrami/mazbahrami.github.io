@@ -1,0 +1,367 @@
+/*
+  Homepage refinement — v9
+  Loaded after style.css and writing-articles.css.
+  Purpose: preserve the existing palette and visual identity while making the
+  landing page quieter, better aligned, and more academically restrained.
+*/
+
+.home-page{
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+}
+
+/* A calmer typographic hierarchy */
+.home-page h1,
+.home-page h2,
+.home-page h3{
+  font-family:var(--serif);
+  font-weight:600;
+  text-wrap:balance;
+}
+
+.home-page h1{
+  font-size:clamp(2.85rem,5vw,4.55rem);
+  line-height:1.03;
+  letter-spacing:-.04em;
+}
+
+.home-page h2{
+  font-size:clamp(1.82rem,3vw,2.68rem);
+  line-height:1.12;
+  letter-spacing:-.028em;
+}
+
+.home-page h3{
+  font-size:1.28rem;
+  line-height:1.28;
+}
+
+.home-page .section-pad{
+  padding:88px 0;
+}
+
+.home-page .eyebrow,
+.home-page .kicker{
+  letter-spacing:.14em;
+  font-size:.73rem;
+  margin-bottom:16px;
+}
+
+/* Hero: fewer claims, fewer controls, cleaner visual balance */
+.home-page .hero{
+  padding-top:72px;
+  padding-bottom:92px;
+}
+
+.home-page .hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,700px) minmax(300px,360px);
+  gap:72px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.home-page .hero-copy{
+  max-width:700px;
+}
+
+.home-page .hero-copy h1{
+  margin-bottom:24px;
+}
+
+.home-page .hero-lead{
+  max-width:650px;
+  font-size:1.15rem;
+  line-height:1.75;
+  color:var(--muted);
+  text-align:left!important;
+  text-justify:auto!important;
+  hyphens:none!important;
+}
+
+.home-page .hero-actions{
+  margin-top:28px;
+  gap:10px;
+}
+
+.home-page .btn{
+  padding:11px 18px;
+  font-size:.88rem;
+  font-weight:650;
+}
+
+.home-page .profile-card{
+  border-radius:26px;
+  transform:rotate(.35deg);
+  box-shadow:0 14px 42px rgba(19,39,45,.09);
+}
+
+.home-page .profile-card-body{
+  padding:23px 25px 25px;
+}
+
+.home-page .profile-card-body h2{
+  font-size:1.45rem;
+  line-height:1.2;
+  margin-bottom:7px;
+}
+
+.home-page .profile-card-body>p:not(.kicker){
+  font-size:.92rem;
+  line-height:1.6;
+}
+
+/* Consistent two-column rhythm */
+.home-page .split-heading{
+  display:grid;
+  grid-template-columns:minmax(260px,360px) minmax(0,720px);
+  gap:72px;
+  justify-content:space-between;
+  align-items:start;
+}
+
+.home-page .split-heading>div:first-child{
+  position:static;
+}
+
+.home-page .intro-prose{
+  font-size:1.03rem;
+  max-width:720px;
+}
+
+.home-page .intro-prose p{
+  max-width:68ch;
+  line-height:1.78;
+  text-align:left!important;
+  text-justify:auto!important;
+  hyphens:none!important;
+}
+
+.home-page .text-link{
+  margin-top:4px;
+}
+
+/* Research */
+.home-page .research-grid{
+  display:grid;
+  grid-template-columns:minmax(0,520px) minmax(360px,560px);
+  gap:72px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.home-page .research-grid p:not(.eyebrow){
+  max-width:60ch;
+  font-size:1.02rem;
+  line-height:1.75;
+  text-align:left;
+}
+
+.home-page .research-topic-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:27px 0 4px;
+}
+
+.home-page .research-topic-list span{
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:.75rem;
+  line-height:1.2;
+  color:#d7e8e8;
+}
+
+.home-page .research-visual{
+  border-radius:20px;
+}
+
+/* Featured writing: keep it prominent without becoming oversized */
+.home-page .featured-writing-grid{
+  grid-template-columns:minmax(0,650px) minmax(320px,420px);
+  gap:72px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.home-page .featured-writing-copy h2{
+  font-size:clamp(2rem,3.3vw,3rem);
+  max-width:650px;
+}
+
+.home-page .featured-writing-copy>p{
+  max-width:64ch;
+  line-height:1.76;
+  text-align:left!important;
+  text-justify:auto!important;
+  hyphens:none!important;
+}
+
+.home-page .featured-deck{
+  font-size:1.2rem!important;
+  line-height:1.5!important;
+}
+
+.home-page .featured-writing-visual{
+  min-height:350px;
+  border-radius:22px;
+  padding:32px;
+  box-shadow:0 14px 42px rgba(19,39,45,.10);
+}
+
+.home-page .policy-visual-path{
+  gap:8px;
+  margin:34px 0 22px;
+}
+
+.home-page .policy-visual-path b{
+  padding:9px 11px;
+  border-radius:10px;
+  font-size:.92rem;
+}
+
+/* Learning R */
+.home-page .learning-home-grid{
+  display:grid;
+  grid-template-columns:minmax(0,560px) minmax(360px,1fr);
+  gap:72px;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.home-page .learning-home-grid>div:first-child>p:not(.eyebrow){
+  max-width:62ch;
+  line-height:1.76;
+  color:var(--muted);
+  text-align:left;
+}
+
+.home-page .learning-home-steps{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:var(--surface);
+}
+
+.home-page .learning-home-steps span{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:1rem;
+}
+
+.home-page .learning-home-steps i{
+  font-style:normal;
+  color:var(--accent);
+  font-weight:700;
+}
+
+/* Contact: restrained final section */
+.home-page .contact-cta .container{
+  max-width:760px;
+}
+
+.home-page .contact-cta h2{
+  margin-bottom:18px;
+}
+
+.home-page .contact-cta p:not(.eyebrow){
+  max-width:660px;
+  margin-inline:auto;
+  font-size:1.02rem;
+  line-height:1.75;
+}
+
+/* Slightly tighter footer */
+.home-page .site-footer{
+  padding-top:54px;
+}
+
+/* Tablet */
+@media(max-width:980px){
+  .home-page .hero-grid,
+  .home-page .split-heading,
+  .home-page .research-grid,
+  .home-page .featured-writing-grid,
+  .home-page .learning-home-grid{
+    grid-template-columns:1fr;
+    gap:44px;
+  }
+
+  .home-page .hero-copy,
+  .home-page .intro-prose,
+  .home-page .featured-writing-copy{
+    max-width:760px;
+  }
+
+  .home-page .profile-card{
+    max-width:440px;
+    transform:none;
+  }
+
+  .home-page .research-visual,
+  .home-page .featured-writing-visual{
+    max-width:620px;
+  }
+
+  .home-page .learning-home-steps{
+    justify-content:flex-start;
+  }
+}
+
+/* Mobile */
+@media(max-width:680px){
+  .home-page .section-pad{
+    padding:66px 0;
+  }
+
+  .home-page .hero{
+    padding-top:54px;
+    padding-bottom:68px;
+  }
+
+  .home-page h1{
+    font-size:clamp(2.7rem,13vw,3.7rem);
+  }
+
+  .home-page h2{
+    font-size:clamp(1.7rem,8vw,2.25rem);
+  }
+
+  .home-page .hero-lead{
+    font-size:1.05rem;
+  }
+
+  .home-page .profile-card{
+    max-width:100%;
+  }
+
+  .home-page .featured-writing-visual{
+    min-height:285px;
+    padding:26px;
+  }
+
+  .home-page .learning-home-steps{
+    padding:22px;
+    gap:8px;
+  }
+
+  .home-page .learning-home-steps i{
+    display:none;
+  }
+
+  .home-page .learning-home-steps span{
+    width:100%;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .home-page .learning-home-steps span:last-child{
+    border-bottom:0;
+    padding-bottom:0;
+  }
+}
