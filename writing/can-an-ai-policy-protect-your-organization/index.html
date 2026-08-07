@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Can an AI Policy Really Protect Your Organization?</title>
+<meta content="An AI policy can define responsible use, but it cannot govern AI alone. Effective AI governance must be designed into organizational roles, workflows, technical architecture, human oversight, monitoring, and learning." name="description"/><meta content="Maziyar Bahrami" name="author"/><meta content="#173d46" name="theme-color"/>
+<link href="https://mazbahrami.github.io/writing/can-an-ai-policy-protect-your-organization/" rel="canonical"/>
+<meta content="article" property="og:type"/><meta content="Can an AI Policy Really Protect Your Organization?" property="og:title"/><meta content="An AI policy can define responsible use, but it cannot govern AI alone. Effective AI governance must be designed into organizational roles, workflows, technical architecture, human oversight, monitoring, and learning." property="og:description"/><meta content="https://mazbahrami.github.io/writing/can-an-ai-policy-protect-your-organization/" property="og:url"/><meta content="https://mazbahrami.github.io/assets/images/og-default.png" property="og:image"/><meta content="Maziyar Bahrami" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/><meta content="Can an AI Policy Really Protect Your Organization?" name="twitter:title"/><meta content="An AI policy can define responsible use, but it cannot govern AI alone. Effective AI governance must be designed into organizational roles, workflows, technical architecture, human oversight, monitoring, and learning." name="twitter:description"/><meta content="https://mazbahrami.github.io/assets/images/og-default.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/site.webmanifest" rel="manifest"/><link href="/assets/css/style.css" rel="stylesheet"/><link href="/assets/css/writing-articles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Can an AI Policy Really Protect Your Organization?","alternativeHeadline":"Why AI Governance Must Be Designed, Not Merely Declared","description":"An AI policy can define responsible use, but it cannot govern AI alone. Effective AI governance must be designed into organizational roles, workflows, technical architecture, human oversight, monitoring, and learning.","author":{"@type":"Person","name":"Maziyar Bahrami","url":"https://mazbahrami.github.io/"},"datePublished":"2026-08-06","dateModified":"2026-08-06","mainEntityOfPage":"https://mazbahrami.github.io/writing/can-an-ai-policy-protect-your-organization/","publisher":{"@type":"Person","name":"Maziyar Bahrami"},"keywords":["AI policy","AI governance","governance by design","human oversight","agentic AI","organizational design","AI risk management"]}</script>
+<script>document.documentElement.dataset.theme=localStorage.getItem('theme')||'light';</script></head><body><a class="skip-link" href="#article-body">Skip to article</a>
+<header class="site-header"><div class="container nav-wrap">
+<a aria-label="Maziyar Bahrami home" class="brand" href="/"><span class="brand-mark">MB</span><span class="brand-name">Maziyar Bahrami</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav"><a href="/about/">Background</a><a href="/research/">Research</a><a class="nav-featured active" aria-current="page" href="/writing/">Writing</a><a href="/learning-r/">Learning R</a><a href="/cv/">CV</a></nav>
+<div class="nav-actions"><a aria-label="GitHub profile" class="icon-link" href="https://github.com/mazbahrami" rel="noopener" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .7A11.3 11.3 0 0 0 8.4 22.8c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-6A4.7 4.7 0 0 1 6 8.5c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.6 3.4-1.2 3.4-1.2.7 1.6.3 2.9.1 3.2a4.7 4.7 0 0 1 1.3 3.3c0 4.7-2.9 5.7-5.6 6 .4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path></svg></a><button aria-label="Toggle light and dark mode" class="theme-toggle" type="button"><span class="sun">☼</span><span class="moon">☾</span></button></div>
+</div></header>
+<main id="main">
+<section class="article-hero policy-article-hero"><div class="container article-title-wrap">
+<a class="article-back" href="/writing/">← Back to Writing</a>
+<p class="eyebrow">Research Essay · AI Governance</p>
+<h1>Can an AI Policy Really Protect Your Organization?</h1>
+<p class="article-deck">Why AI Governance Must Be Designed, Not Merely Declared</p>
+<div class="article-meta"><span>By Maziyar Bahrami</span><time datetime="2026-08-06">August 6, 2026</time><span>22 min read</span></div>
+<div class="article-actions"><a class="btn primary" href="#article-body">Read the Essay</a><a class="btn secondary" download href="/assets/documents/writing/Can-an-AI-Policy-Really-Protect-Your-Organization.pdf">Download PDF</a></div>
+</div></section>
+<section class="article-shell"><div class="container article-layout essay-article-layout policy-article-layout">
+<aside aria-label="Article contents" class="toc article-sidebar"><p>Contents</p><a href="#the-problem-is-not-a-shortage-of-principles">The problem is not a shortage of principles</a><a href="#the-implementation-gap-is-a-design-gap">The implementation gap is a design gap</a><a href="#what-governance-by-design-means">What governance by design means</a><a href="#designing-visibility-the-organization-must-first-know-what-exists">Designing visibility: the organization must first know what exists</a><a href="#designing-responsibility-a-committee-is-not-yet-accountability">Designing responsibility: a committee is not yet accountability</a><a href="#designing-human-oversight-presence-is-not-control">Designing human oversight: presence is not control</a><a href="#designing-architecture-policy-must-alter-what-the-system-can-do">Designing architecture: policy must alter what the system can do</a><a href="#designing-for-actual-work">Designing for actual work</a><a href="#designing-for-change-approval-cannot-be-the-end">Designing for change: approval cannot be the end</a><a href="#the-governance-control-loop">The governance control loop</a><a href="#from-written-commitment-to-designed-governance">From written commitment to designed governance</a><a href="#governance-can-fail-even-when-the-policy-was-followed">Governance can fail even when the policy was followed</a><a href="#what-boards-and-senior-leaders-should-ask">What boards and senior leaders should ask</a><a href="#policies-still-matter">Policies still matter</a><a href="#references">References</a><div class="article-author-card"><img alt="Maziyar Bahrami" height="200" src="/assets/images/maziyar-bahrami-profile.webp" width="160"/><div><strong>Maziyar Bahrami</strong><span>Interdisciplinary researcher working across Information Systems, AI governance, management, and computational methods.</span></div></div></aside>
+<article class="article-body essay-article-body policy-article-body" id="article-body">
+<p class="article-excerpt">A written AI policy can state what an organization expects. It cannot see where AI is being used, determine whether human oversight is meaningful, stop an unsafe system, or learn from failure. Those capabilities must be designed.</p>
+<p class="section-opening article-opening">The approval of an AI policy can feel like the moment an organization has taken control.</p>
+<p>The document may prohibit employees from entering confidential information into public AI systems. It may require human oversight for consequential decisions, restrict unapproved tools, assign responsibility to an AI committee, and express commitments to fairness, transparency, privacy, security, and accountability.</p>
+<p>These are reasonable provisions. Some are essential.</p>
+<p>But approving them does not create the capabilities they assume.</p>
+<p>The policy does not reveal that a marketing team has begun analysing customer feedback through an external language model. It does not detect that an AI feature has been added to software approved two years earlier. It does not know that a recruiter is gradually treating a vendor’s ranking as the default basis for screening candidates. It cannot determine whether the person nominally “in the loop” has enough information, time, or authority to challenge the system.</p>
+<p>Nor can the document prevent an AI agent from accessing the wrong records, reconstruct a decision that was never logged, or suspend a system whose behaviour has changed since approval.</p>
+<p>The policy may be sound. The organization may still lack control.</p>
+<p>This distinction is the starting point for a more serious understanding of AI governance. A policy defines what an organization intends to permit, prohibit, and protect. Governance must make those intentions visible, actionable, enforceable, and revisable in everyday work.</p>
+<p>That is why AI governance is not only a policy or compliance problem. It is also a <strong>sociotechnical design problem</strong>.</p>
+<p>The difficult question is not simply whether the organization has declared responsible principles. It is whether those principles have been designed into the roles, workflows, interfaces, permissions, technical systems, monitoring arrangements, and decision processes through which AI actually operates.</p>
+<h2 id="the-problem-is-not-a-shortage-of-principles">The problem is not a shortage of principles</h2>
+<p class="section-opening">Organizations are not starting from an ethical vacuum.</p>
+<p>In their analysis of 84 AI ethics guidelines, Jobin, Ienca, and Vayena (2019) found considerable convergence around principles such as transparency, fairness, responsibility, privacy, and the prevention of harm. But they also found substantial differences in how those principles were interpreted, prioritized, and connected to implementation.</p>
+<p>That difference matters.</p>
+<p>Agreement that AI should be fair does not establish which harms should be examined, which affected groups are relevant, which measures should be used, or what level of disparity should prevent deployment.</p>
+<p>A commitment to transparency does not specify what must be explained, to whom, at what stage, or in what form.</p>
+<p>A requirement for human oversight does not identify the responsible person, the evidence that person should receive, the decisions they may override, or the consequences of raising an objection.</p>
+<p>The language of principles can create broad consensus precisely because it leaves many difficult choices unresolved.</p>
+<p>Mittelstadt (2019) argues that principles alone cannot guarantee ethical AI because abstract values remain open to competing interpretations and may have little practical force without professional duties, institutional structures, enforcement, and avenues for redress. Morley et al. (2020) describe the same implementation challenge as the movement from the <strong>what</strong> of AI ethics to the <strong>how</strong>: from naming desirable values to developing methods through which those values influence data, system requirements, development, deployment, and evaluation.</p>
+<p>This is where many organizational efforts become weak. They concentrate on improving the statement of intent while leaving the operating environment largely unchanged.</p>
+<p>The central problem is therefore not necessarily that the policy contains the wrong values.</p>
+<p>It is that the values remain detached from the systems through which AI is selected, configured, accessed, supervised, and changed.</p>
+<h2 id="the-implementation-gap-is-a-design-gap">The implementation gap is a design gap</h2>
+<p class="section-opening">Organizational AI governance is broader than rulemaking.</p>
+<p>Mäntymäki et al. (2022) define organizational AI governance as a system of rules, practices, processes, and technological tools for ensuring that an organization’s use of AI remains aligned with its objectives, values, and legal obligations. Their analysis also places AI governance within an existing landscape of corporate governance, information technology governance, and data governance. AI is not governed in an institutional vacuum.</p>
+<p>Papagiannidis, Mikalef, and Conboy (2025) develop this organizational view further. Their review conceptualizes responsible AI governance through three kinds of practice:</p>
+<ul class="article-list">
+<li><strong>Structural practices</strong>, which allocate authority, responsibility, and oversight;</li>
+<li><strong>Procedural practices</strong>, which shape assessment, development, deployment, monitoring, and response;</li>
+<li><strong>Relational practices</strong>, which coordinate the technical, managerial, legal, and social actors involved in the AI lifecycle.</li>
+</ul>
+<p class="section-opening">A policy can inform all three. It cannot substitute for them.</p>
+<p>The difference can be expressed simply:</p>
+<blockquote><p><strong>Policy defines the expected condition. Governance creates the organizational capacity to detect and correct the distance between expectation and reality.</strong></p></blockquote>
+<p class="section-opening">That capacity has to be designed.</p>
+<p>Someone must decide what information flows into a governance decision. Someone must have the authority to approve, reject, restrict, or suspend a system. Workflows must specify where review occurs. Interfaces must present the information a reviewer needs. Technical architecture must enforce permissions and preserve evidence. Monitoring must detect when assumptions no longer hold.</p>
+<p>Without these arrangements, a policy may communicate expectations but remain distant from the points at which AI creates real consequences.</p>
+<h2 id="what-governance-by-design-means">What governance by design means</h2>
+<p class="section-opening">The expression <strong>governance by design</strong> should not be reduced to adding an ethics checklist to software development or encoding a few rules into a model.</p>
+<p>In this essay, I use the term more precisely:</p>
+<blockquote class="definition-callout"><p><strong>Governance by design is the deliberate translation of organizational principles, responsibilities, and risk boundaries into the structures through which an AI system is developed, accessed, used, supervised, monitored, and changed.</strong></p></blockquote>
+<p class="section-opening">This includes technical design, but it extends beyond technology.</p>
+<p>Governance by design involves:</p>
+<ul class="article-list">
+<li><strong>organizational design:</strong> who owns the system, who evaluates risk, who may approve it, and who can stop it;</li>
+<li><strong>workflow design:</strong> when review occurs, what triggers escalation, and how exceptions are handled;</li>
+<li><strong>technical design:</strong> permissions, data boundaries, logging, monitoring, release controls, and interruption mechanisms;</li>
+<li><strong>interaction design:</strong> how uncertainty, limitations, evidence, and alternative options are presented to users;</li>
+<li><strong>incentive design:</strong> whether employees are rewarded for responsible challenge or pressured to accept automated outputs;</li>
+<li><strong>learning design:</strong> how incidents, complaints, overrides, and audit findings change future systems and policies.</li>
+</ul>
+<p class="section-opening">A 2021 expert guidance note prepared at the request of the European Commission’s Directorate-General for Research and Innovation offers a useful model through its concept of <strong>Ethics by Design</strong>. The note explicitly states that it is not formal EU guidance, but its conceptual structure is valuable. It moves from ethical principles to requirements, development guidelines, methodologies, and specific tools. The point is that abstract commitments must become increasingly concrete as they enter development and use.</p>
+<p>The same document describes “accountability by design” in operational terms. It calls for mechanisms through which undesirable effects can be detected, stopped, and prevented from recurring; human actors can supervise and override systems; complaints can be raised and assessed; and relevant decisions and processes can be traced.</p>
+<p>Governance by design extends this logic from the technical development process to the organization as a whole.</p>
+<p>It asks not only whether an AI system possesses a desirable feature, but whether the surrounding organization has been configured to govern that feature in practice.</p>
+<h2 id="designing-visibility-the-organization-must-first-know-what-exists">Designing visibility: the organization must first know what exists</h2>
+<p class="section-opening">An organization cannot govern AI it cannot identify.</p>
+<p>This requirement is becoming harder to satisfy because AI no longer enters organizations only through large, clearly labelled technology projects. It arrives through browser tools, office applications, software updates, coding assistants, analytics products, customer-service platforms, vendor systems, and individual employee accounts.</p>
+<p>An employee may not describe an embedded search function as an AI system. A department may purchase a service without knowing which external model processes its information. A vendor may add generative features after the original procurement review.</p>
+<p>A policy can state that only approved AI may be used. But unless the organization maintains a sufficiently current view of its systems, models, agents, vendors, owners, data access, and purposes, the category of “approved AI” remains administrative rather than operational.</p>
+<p>NIST’s AI Risk Management Framework makes this distinction explicit. Its GOVERN function calls for mechanisms to inventory AI systems, clearly documented roles and responsibilities, ongoing monitoring, periodic review, and processes for safely decommissioning systems. Governance is described as a cross-cutting and continuing function, not as a document produced at the beginning of the process (NIST, 2023).</p>
+<p>A useful AI inventory should therefore answer more than “Which tools have we bought?”</p>
+<p>It should identify:</p>
+<ul class="article-list">
+<li>the AI systems and agents in use;</li>
+<li>their intended organizational purposes;</li>
+<li>the processes and decisions they influence;</li>
+<li>the data, applications, and tools they can access;</li>
+<li>their internal and external owners;</li>
+<li>their model and vendor dependencies;</li>
+<li>the actions they can recommend or execute;</li>
+<li>the people or groups affected by their outputs;</li>
+<li>and the mechanisms through which access can be restricted or removed.</li>
+</ul>
+<p class="section-opening">Visibility is not yet governance. But without visibility, governance begins from an incomplete representation of the organization.</p>
+<p>The policy applies to the organization leaders believe they have. AI operates in the organization that actually exists.</p>
+<h2 id="designing-responsibility-a-committee-is-not-yet-accountability">Designing responsibility: a committee is not yet accountability</h2>
+<p class="section-opening">Many organizations respond to AI risk by creating a committee.</p>
+<p>A cross-functional group may bring together legal, compliance, security, data, technology, human resources, and business representatives. This can be valuable because AI risks rarely fit within a single organizational function.</p>
+<p>But assembling relevant people does not automatically produce accountable decisions.</p>
+<p>The committee may receive incomplete information. Its members may review only the part of the system that falls within their existing mandate. Recommendations may be advisory. No participant may possess clear authority to delay deployment. When several functions approve their respective components, responsibility for the combined outcome can become unclear.</p>
+<p>A governance body becomes operational only when its decision rights are designed.</p>
+<p>That requires answers to questions such as:</p>
+<ul class="article-list">
+<li>Which systems must reach the committee?</li>
+<li>What evidence must be provided?</li>
+<li>Which risks can be accepted, and by whom?</li>
+<li>What conditions may be attached to approval?</li>
+<li>Who may require redesign or additional testing?</li>
+<li>Who may suspend the system after deployment?</li>
+<li>How are disagreements resolved?</li>
+<li>Who remains responsible when several functions share control?</li>
+</ul>
+<p class="section-opening">Structural governance practices matter because accountability requires more than the retrospective identification of someone to blame. It requires prospective clarity about who is expected to notice, decide, intervene, and learn.</p>
+<p>Raji et al. (2020), for example, propose an end-to-end internal auditing process in which organizational principles feed into evidence and review throughout the development lifecycle. Their framework connects accountability to assigned roles, interdisciplinary evaluation, documented decisions, and the capacity to abandon a system when its risks outweigh its benefits.</p>
+<p>The question is not merely whether an organization has an AI ethics board.</p>
+<p>It is whether that board, or another designated authority, receives the right signals and possesses the power to change what happens next.</p>
+<h2 id="designing-human-oversight-presence-is-not-control">Designing human oversight: presence is not control</h2>
+<p class="section-opening">One of the most common statements in AI policies is that a human must remain “in the loop.”</p>
+<p>The phrase is reassuring because it appears to preserve human responsibility. But it often conceals more questions than it answers.</p>
+<p>Which human?</p>
+<p>At what point in the process?</p>
+<p>Reviewing what information?</p>
+<p>Under what time constraints?</p>
+<p>With what knowledge of the system?</p>
+<p>Can the person reject the output, request further evidence, delay the process, or suspend the system?</p>
+<p>A person who approves hundreds of recommendations, sees only the model’s preferred answer, and is evaluated primarily on speed may formally participate in the process while exercising little independent judgment.</p>
+<p>Human oversight is therefore not created by placing a person at the end of an automated workflow. It must be designed as a meaningful decision capability.</p>
+<p>Raisch and Krakowski (2021) show why automation and human augmentation cannot be separated cleanly. When AI automates part of a task, it also changes the remaining human work. It can alter attention, expertise, discretion, workload, and responsibility.</p>
+<p>Kellogg, Valentine, and Christin (2020) similarly show how algorithmic systems reshape organizational control by recording, rating, recommending, restricting, rewarding, directing, and replacing aspects of work. The relevant object of governance is therefore not only the model. It is the configuration of people, technologies, incentives, and tasks through which an outcome is produced.</p>
+<p>Meaningful human oversight requires at least four designed conditions.</p>
+<p>First, the reviewer must receive relevant information. A model output presented as an authoritative answer creates a different form of oversight from an interface that displays uncertainty, missing information, limitations, and alternative evidence.</p>
+<p>Second, the reviewer must possess appropriate competence. Training should address not only how to use the system, but when its outputs should be doubted.</p>
+<p>Third, the reviewer must possess genuine authority. The right to object is meaningless if organizational targets, interface design, or managerial pressure make objection practically impossible.</p>
+<p>Fourth, the decision must be traceable. The organization should be able to reconstruct what the system recommended, what the reviewer knew, what action was taken, and why.</p>
+<p>The EU AI Act reflects this design logic for high-risk AI systems. Article 14 requires such systems to be designed and developed with appropriate human–machine interface tools so that they can be effectively overseen. It also states that oversight measures should be proportionate to the system’s risk, autonomy, and context of use. The precise legal obligation depends on the system and the organization’s role, but the underlying principle is clear: human oversight must be made technically and organizationally possible.</p>
+<p>The presence of a human is an organizational fact.</p>
+<p>The capacity to exercise judgment is a design achievement.</p>
+<h2 id="designing-architecture-policy-must-alter-what-the-system-can-do">Designing architecture: policy must alter what the system can do</h2>
+<p class="section-opening">Consider a policy that prohibits confidential information from being entered into unauthorized AI services.</p>
+<p>The rule may be communicated through training and employee guidance. But the document cannot identify sensitive information in a prompt, restrict access to an unapproved provider, preserve an audit trail, or alert a responsible control owner.</p>
+<p>Those outcomes require mechanisms such as:</p>
+<ul class="article-list">
+<li>approved AI environments;</li>
+<li>identity and access management;</li>
+<li>data classification;</li>
+<li>AI gateways;</li>
+<li>data-loss-prevention controls;</li>
+<li>logging and observability;</li>
+<li>procurement restrictions;</li>
+<li>release gates;</li>
+<li>incident-response processes;</li>
+<li>and clearly assigned control owners.</li>
+</ul>
+<p class="section-opening">The same distinction applies to model evaluation. A policy can require testing before deployment. Unless the development and release process prevents an untested system from moving into production, testing remains an expectation rather than a constraint.</p>
+<p>Architecture is where some organizational intentions become enforceable.</p>
+<p>This does not mean that every ethical or governance judgment can be automated. Technical controls embody assumptions and cannot resolve every conflict involving fairness, human rights, uncertainty, organizational purpose, or acceptable risk.</p>
+<p>But the opposite position is also inadequate. Human responsibility without supporting architecture leaves people accountable for systems they may be unable to observe, reconstruct, constrain, or stop.</p>
+<p>Agentic AI makes this problem more visible.</p>
+<p>An AI agent may be able to search documents, retrieve personal data, call software tools, update records, communicate with other systems, or initiate transactions. A policy saying that the agent should use “only the information necessary for its task” does not define an authorization system.</p>
+<p>The design must specify:</p>
+<ul class="article-list">
+<li>the identity under which the agent operates;</li>
+<li>the resources it may access;</li>
+<li>the actions it may perform;</li>
+<li>the context in which permission applies;</li>
+<li>whether access is temporary or persistent;</li>
+<li>which actions require human approval;</li>
+<li>which actions are reversible;</li>
+<li>what the system records;</li>
+<li>and how authority can be withdrawn.</li>
+</ul>
+<p class="section-opening">For a simple workflow, these permissions may be largely predetermined. For a more autonomous agent, permissions may depend on changing relationships among the user, the task, the organizational role, the data, and the requested action.</p>
+<p>The governance question therefore moves from a broad statement such as “agents must operate responsibly” to an architectural question:</p>
+<blockquote><p>Under exactly what conditions can this agent observe, decide, communicate, and act?</p></blockquote>
+<p class="section-opening">Without that translation, the organization has a rule about autonomy but no reliable mechanism for governing it.</p>
+<h2 id="designing-for-actual-work">Designing for actual work</h2>
+<p class="section-opening">Governance often originates centrally. AI-supported decisions occur throughout the organization.</p>
+<p>That creates a tension between consistency and context. The organization needs shared principles and minimum controls, but the meaning of those controls depends on the work being performed.</p>
+<p>Using a language model to improve the wording of a public announcement is not equivalent to using one to summarize confidential research, screen job candidates, advise a clinician, or prepare a legal argument. The same general technology can create very different risks because the affected people, acceptable errors, evidentiary requirements, and possibilities for redress differ.</p>
+<p>Selbst et al. (2019) describe several “abstraction traps” that arise when algorithmic fairness is treated as a property of a technical model detached from its social and institutional context. A technically coherent intervention may fail because the problem was framed too narrowly or because a solution was transferred between settings without accounting for differences in institutions and practice.</p>
+<p>Governance therefore has to enter the context in which the technology is used.</p>
+<p>Rakova et al. (2021), drawing on interviews with responsible-AI practitioners, found that organizational structures, incentives, and accountability arrangements strongly affected whether responsible-AI initiatives could move from aspiration to practice. Practitioners frequently encountered unclear accountability, conflicting performance priorities, and reactive decision structures. More mature arrangements required responsible-AI work to be embedded across the product lifecycle rather than delegated to isolated individuals or specialist teams.</p>
+<p>This is why AI governance must be connected to work design.</p>
+<p>It must shape:</p>
+<ul class="article-list">
+<li>procurement and vendor selection;</li>
+<li>use-case registration;</li>
+<li>data-access decisions;</li>
+<li>development and release processes;</li>
+<li>task allocation between humans and machines;</li>
+<li>performance targets;</li>
+<li>user interfaces;</li>
+<li>review and escalation procedures;</li>
+<li>incident reporting;</li>
+<li>post-deployment monitoring;</li>
+<li>and system retirement.</li>
+</ul>
+<p class="section-opening">A policy that conflicts continuously with how work is organized will struggle to govern behaviour. Employees still face deadlines, productivity demands, resource limits, and local objectives.</p>
+<p>Governance by design asks whether responsible conduct is practically supported at the point of work, rather than merely requested from a distance.</p>
+<h2 id="designing-for-change-approval-cannot-be-the-end">Designing for change: approval cannot be the end</h2>
+<p class="section-opening">Most written policies appear stable.</p>
+<p>The systems they govern are not.</p>
+<p>A provider may update a model. A team may connect it to a new dataset. Employees may use it for a purpose that was not included in the original assessment. A workflow may change. The affected population may change. An advisory system may gradually become the default basis for decisions.</p>
+<p>Even when the model itself does not learn continuously, the sociotechnical arrangement around it evolves.</p>
+<p>A system that was acceptable when approved can therefore become unacceptable later.</p>
+<p>NIST addresses this through its four interconnected functions: <strong>Govern, Map, Measure, and Manage</strong>. GOVERN operates across the lifecycle, while the other functions establish context, evaluate risk, and support action. NIST also calls for post-deployment monitoring, user and stakeholder input, appeal and override mechanisms, incident response, recovery, change management, and the ability to deactivate systems whose performance becomes inconsistent with their intended use.</p>
+<p>The EU AI Act similarly defines risk management for high-risk AI systems as a continuous and iterative process conducted throughout the system lifecycle. It links risk management to foreseeable misuse, post-market evidence, human oversight, quality management, and corrective or preventive action. Again, the exact obligations depend on legal classification and organizational role; the relevant point is that lifecycle governance cannot be reduced to the possession of an internal policy.</p>
+<p>This lifecycle perspective changes the meaning of approval.</p>
+<p>Approval should not mean:</p>
+<blockquote><p>We evaluated the system once and accepted it.</p></blockquote>
+<p class="section-opening">It should mean:</p>
+<blockquote><p>Based on the present evidence, the system may operate under specified conditions, subject to continued observation and the authority to intervene.</p></blockquote>
+<p class="section-opening">That is a much less reassuring statement.</p>
+<p>It is also a more honest one.</p>
+<h2 id="the-governance-control-loop">The governance control loop</h2>
+<p class="section-opening">Governance by design explains what must be embedded in an organization.</p>
+<p>A control-loop perspective explains how those arrangements should operate over time.</p>
+<p>A functioning AI governance system repeatedly performs four connected activities.</p>
+
+<div class="control-loop-figure" aria-label="AI governance control loop">
+  <div><span>01</span><strong>Sense</strong><small>Observe systems, use, incidents, and change</small></div>
+  <i aria-hidden="true">→</i>
+  <div><span>02</span><strong>Interpret</strong><small>Evaluate evidence, context, uncertainty, and risk</small></div>
+  <i aria-hidden="true">→</i>
+  <div><span>03</span><strong>Act</strong><small>Restrict, redesign, suspend, or correct</small></div>
+  <i aria-hidden="true">→</i>
+  <div><span>04</span><strong>Learn</strong><small>Change policy, work, architecture, and assumptions</small></div>
+  <i class="loop-back" aria-hidden="true">↺</i>
+</div>
+<h3 id="1-sense">1. Sense</h3>
+<p class="section-opening">The organization gathers evidence about what is happening.</p>
+<p>It inventories systems and use cases, monitors performance, records incidents and complaints, tracks overrides, observes vendor and model changes, and identifies changes in law, organizational context, or affected populations.</p>
+<p>The sensing question is:</p>
+<blockquote><p><strong>What is happening, and what has changed?</strong></p></blockquote>
+<h3 id="2-interpret">2. Interpret</h3>
+<p class="section-opening">Relevant actors evaluate what the evidence means.</p>
+<p>They examine technical performance, legal obligations, affected stakeholders, ethical tensions, uncertainty, and organizational risk tolerance. They determine whether the system remains consistent with its intended use and acceptable boundaries.</p>
+<p>The interpretive question is:</p>
+<blockquote><p><strong>Does the system remain acceptable under current conditions?</strong></p></blockquote>
+<h3 id="3-act">3. Act</h3>
+<p class="section-opening">The organization possesses mechanisms and authority to intervene.</p>
+<p>It may require further testing, restrict access, alter a workflow, impose additional review, notify affected people, change a threshold, suspend the system, replace a vendor, or abandon the use case.</p>
+<p>The action question is:</p>
+<blockquote><p><strong>Who can change or stop the system, and through which mechanism?</strong></p></blockquote>
+<h3 id="4-learn">4. Learn</h3>
+<p class="section-opening">The organization uses experience to change future behaviour.</p>
+<p>Incidents, complaints, near misses, audits, overrides, and unexpected outcomes lead to revisions in policy, training, responsibilities, architecture, system design, procurement, and risk assumptions.</p>
+<p>The learning question is:</p>
+<blockquote><p><strong>What must change because of what we have discovered?</strong></p></blockquote>
+<p class="section-opening">These activities must remain connected.</p>
+<p>Monitoring without intervention creates reports, not control.</p>
+<p>Authority without reliable information creates arbitrary decisions.</p>
+<p>Intervention without learning allows the same weakness to return.</p>
+<p>A policy that is never updated through operational experience gradually becomes detached from the organization it is supposed to govern.</p>
+<p>The control loop is therefore not an alternative to policy. It is the operating system through which policy becomes adaptive governance.</p>
+<h2 id="from-written-commitment-to-designed-governance">From written commitment to designed governance</h2>
+<p class="section-opening">The difference becomes clearer when policy commitments are connected to design decisions, operating mechanisms, and evidence.</p>
+<p class="table-hint">Swipe horizontally to view all columns.</p><div class="table-scroll" role="region" aria-label="Policy commitments and governance mechanisms" tabindex="0">
+<table class="governance-table">
+<tr>
+<th scope="col">Written commitment</th>
+<th scope="col">Design question</th>
+<th scope="col">Operating mechanism</th>
+<th scope="col">Evidence</th>
+</tr>
+<tr>
+<td>Confidential information must not be shared with unauthorized AI systems.</td>
+<td>Which data and services are restricted, and what exceptions are legitimate?</td>
+<td>Approved environments, data classification, access restrictions, AI gateways, and escalation procedures.</td>
+<td>Access records, alerts, exceptions, investigations, and control tests.</td>
+</tr>
+<tr>
+<td>Consequential decisions require human oversight.</td>
+<td>Which decisions require review, and what authority must the reviewer possess?</td>
+<td>Review checkpoints, interface design, decision criteria, override rights, and escalation paths.</td>
+<td>Review records, overrides, reasons, appeals, review times, and outcomes.</td>
+</tr>
+<tr>
+<td>AI systems must be assessed for unfair effects.</td>
+<td>Which groups, harms, measures, and thresholds are relevant to the use case?</td>
+<td>Contextual risk assessment, disaggregated evaluation, periodic reassessment, and remediation.</td>
+<td>Test results, accepted thresholds, exception decisions, remediation actions, and revalidation dates.</td>
+</tr>
+<tr>
+<td>Only approved AI systems may be used.</td>
+<td>What counts as an AI system, and how are embedded features and agents identified?</td>
+<td>System inventory, use-case registration, procurement review, named ownership, and release controls.</td>
+<td>Current inventory, approval records, owners, model versions, and deployment history.</td>
+</tr>
+<tr>
+<td>Third-party AI must remain within organizational risk tolerance.</td>
+<td>How will changes in the provider, model, contract, or functionality be detected?</td>
+<td>Vendor assessment, contractual controls, change notifications, monitoring, and reassessment triggers.</td>
+<td>Assessments, notifications, version records, incidents, and review decisions.</td>
+</tr>
+<tr>
+<td>AI incidents must produce corrective action.</td>
+<td>What constitutes an incident, who receives the signal, and who can intervene?</td>
+<td>Reporting channels, severity criteria, investigation procedures, response authority, and corrective-action processes.</td>
+<td>Incident records, response times, causal analysis, corrective actions, and follow-up testing.</td>
+</tr>
+</table></div>
+<p>The final column is especially important.</p>
+<p>A policy demonstrates that the organization has stated a commitment.</p>
+<p>Evidence helps determine whether that commitment has changed behaviour.</p>
+<p>Documentation should not exist merely to produce a larger archive. It should allow the organization to reconstruct decisions, challenge assumptions, respond to affected people, detect recurring weaknesses, and determine whether its controls work under real conditions.</p>
+<h2 id="governance-can-fail-even-when-the-policy-was-followed">Governance can fail even when the policy was followed</h2>
+<p class="section-opening">There is a more difficult possibility.</p>
+<p>An AI system may cause harm even though the policy was followed, the required forms were completed, and the correct committee approved the project.</p>
+<p>The assessment may have examined the wrong risk. The model may have performed well while the surrounding workflow encouraged overreliance. Each function may have approved its own component while nobody examined the combined system. The vendor may have met its contractual obligations, although the organization deployed the product in a context the vendor never evaluated.</p>
+<p>In such cases, additional reminders to follow the policy will not correct the underlying weakness.</p>
+<p>The weakness lies in how the problem, system, roles, and controls were designed.</p>
+<p>This is where compliance and control separate.</p>
+<p>Compliance asks:</p>
+<blockquote><p><strong>Did we follow the established requirements?</strong></p></blockquote>
+<p class="section-opening">Control asks:</p>
+<blockquote><p><strong>Can we keep the system within acceptable boundaries as evidence, behaviour, and conditions change?</strong></p></blockquote>
+<p class="section-opening">An organization needs both questions.</p>
+<p>But answering the first does not automatically answer the second.</p>
+<p>When organizations treat policy approval as proof of governance, they risk producing a visible structure of responsibility without the operational capability required to exercise it. The policy becomes reassuring evidence that the issue has been addressed, while the most consequential decisions remain difficult to see, contest, or reverse.</p>
+<p>That is the real danger of policy theatre.</p>
+<h2 id="what-boards-and-senior-leaders-should-ask">What boards and senior leaders should ask</h2>
+<p class="section-opening">The question “Do we have an AI policy?” is no longer sufficient.</p>
+<p>A more serious governance discussion begins with different questions.</p>
+<h3 id="what-exists">What exists?</h3>
+<p class="section-opening">Can the organization identify its important AI systems, agents, use cases, owners, providers, data access, dependencies, and affected processes?</p>
+<h3 id="what-is-each-system-permitted-to-do">What is each system permitted to do?</h3>
+<p class="section-opening">Have general policy commitments been translated into permissions, risk boundaries, tests, monitoring thresholds, review points, and escalation rules?</p>
+<h3 id="who-can-intervene">Who can intervene?</h3>
+<p class="section-opening">Does a named person or function possess the information, competence, authority, and technical means to restrict, suspend, or redesign the system?</p>
+<h3 id="is-human-oversight-meaningful">Is human oversight meaningful?</h3>
+<p class="section-opening">Can reviewers understand the system’s role, see relevant limitations, challenge its output, and act without unreasonable organizational pressure?</p>
+<h3 id="what-evidence-is-retained">What evidence is retained?</h3>
+<p class="section-opening">Can the organization reconstruct how an important AI-supported decision was reached, what evidence was available, who reviewed it, and what action followed?</p>
+<h3 id="what-happens-after-failure">What happens after failure?</h3>
+<p class="section-opening">Do incidents, complaints, overrides, and audit findings lead to changes in architecture, workflows, incentives, responsibilities, training, and policy?</p>
+<p>These questions shift the discussion from the appearance of governance to the organization’s actual capacity to govern.</p>
+<h2 id="policies-still-matter">Policies still matter</h2>
+<p class="section-opening">None of this makes written AI policies unnecessary.</p>
+<p>Employees need clear boundaries. Technical teams need common requirements. Managers need a basis for allocating authority and resources. Regulators, auditors, customers, and affected individuals need to understand what the organization accepts responsibility for.</p>
+<p>But policy must be placed in its proper role.</p>
+<p>A serious policy establishes direction and constraints.</p>
+<p>Governance by design translates them into organizational arrangements.</p>
+<p>Architecture makes some requirements enforceable.</p>
+<p>Work design preserves meaningful human judgment.</p>
+<p>Monitoring creates evidence.</p>
+<p>Authority enables intervention.</p>
+<p>Learning changes the system when previous assumptions no longer hold.</p>
+<p>The danger is not simply that an organization may violate its AI policy.</p>
+<p>The deeper danger is that it may be unable to see whether the policy is working, unable to intervene when it is not, and unable to understand why it failed.</p>
+<p>A written policy can declare responsibility.</p>
+<p>Only a designed system of visibility, authority, human judgment, technical control, evidence, and learning can make that responsibility real.</p>
+<h2 id="references">References</h2>
+<h3 id="academic-and-institutional-sources">Academic and institutional sources</h3>
+<p class="section-opening reference-entry">European Commission, Directorate-General for Research and Innovation. (2021). <em>Ethics by Design and Ethics of Use Approaches for Artificial Intelligence</em> (Version 1.0).</p>
+<p class="reference-entry">European Parliament and Council of the European Union. (2024). Regulation (EU) 2024/1689 of 13 June 2024 laying down harmonised rules on artificial intelligence. <em>Official Journal of the European Union</em>.</p>
+<p class="reference-entry">International Organization for Standardization. (2023). <em>ISO/IEC 42001:2023: Information technology—Artificial intelligence—Management system</em>.</p>
+<p class="reference-entry">Jobin, A., Ienca, M., &amp; Vayena, E. (2019). The global landscape of AI ethics guidelines. <em>Nature Machine Intelligence, 1</em>, 389–399. doi:<a href="https://doi.org/10.1038/s42256-019-0088-2." rel="noopener">10.1038/s42256-019-0088-2.</a></p>
+<p class="reference-entry">Kellogg, K. C., Valentine, M. A., &amp; Christin, A. (2020). Algorithms at work: The new contested terrain of control. <em>Academy of Management Annals, 14</em>(1), 366–410. doi:<a href="https://doi.org/10.5465/annals.2018.0174." rel="noopener">10.5465/annals.2018.0174.</a></p>
+<p class="reference-entry">Madaio, M. A., Stark, L., Vaughan, J. W., &amp; Wallach, H. (2020). Co-designing checklists to understand organizational challenges and opportunities around fairness in AI. In <em>Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems</em>, 1–14. doi:<a href="https://doi.org/10.1145/3313831.3376445." rel="noopener">10.1145/3313831.3376445.</a></p>
+<p class="reference-entry">Mäntymäki, M., Minkkinen, M., Birkstedt, T., &amp; Viljanen, M. (2022). Defining organizational AI governance. <em>AI and Ethics, 2</em>, 603–609. doi:<a href="https://doi.org/10.1007/s43681-022-00143-x." rel="noopener">10.1007/s43681-022-00143-x.</a></p>
+<p class="reference-entry">Mittelstadt, B. (2019). Principles alone cannot guarantee ethical AI. <em>Nature Machine Intelligence, 1</em>, 501–507. doi:<a href="https://doi.org/10.1038/s42256-019-0114-4." rel="noopener">10.1038/s42256-019-0114-4.</a></p>
+<p class="reference-entry">Mökander, J., Morley, J., Taddeo, M., &amp; Floridi, L. (2021). Ethics-based auditing of automated decision-making systems: Nature, scope, and limitations. <em>Science and Engineering Ethics, 27</em>, Article 44. doi:<a href="https://doi.org/10.1007/s11948-021-00319-4." rel="noopener">10.1007/s11948-021-00319-4.</a></p>
+<p class="reference-entry">Morley, J., Floridi, L., Kinsey, L., &amp; Elhalal, A. (2020). From what to how: An initial review of publicly available AI ethics tools, methods and research to translate principles into practices. <em>Science and Engineering Ethics, 26</em>, 2141–2168. doi:<a href="https://doi.org/10.1007/s11948-019-00165-5." rel="noopener">10.1007/s11948-019-00165-5.</a></p>
+<p class="reference-entry">National Institute of Standards and Technology. (2023). <em>Artificial Intelligence Risk Management Framework (AI RMF 1.0)</em>. NIST AI 100-1. doi:<a href="https://doi.org/10.6028/NIST.AI.100-1." rel="noopener">10.6028/NIST.AI.100-1.</a></p>
+<p class="reference-entry">Papagiannidis, E., Mikalef, P., &amp; Conboy, K. (2025). Responsible artificial intelligence governance: A review and research framework. <em>The Journal of Strategic Information Systems, 34</em>(2), Article 101885. doi:<a href="https://doi.org/10.1016/j.jsis.2024.101885." rel="noopener">10.1016/j.jsis.2024.101885.</a></p>
+<p class="reference-entry">Raisch, S., &amp; Krakowski, S. (2021). Artificial intelligence and management: The automation–augmentation paradox. <em>Academy of Management Review, 46</em>(1), 192–210. doi:<a href="https://doi.org/10.5465/amr.2018.0072." rel="noopener">10.5465/amr.2018.0072.</a></p>
+<p class="reference-entry">Raji, I. D., Smart, A., White, R. N., Mitchell, M., Gebru, T., Hutchinson, B., Smith-Loud, J., Theron, D., &amp; Barnes, P. (2020). Closing the AI accountability gap: Defining an end-to-end framework for internal algorithmic auditing. In <em>Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency</em>, 33–44. doi:<a href="https://doi.org/10.1145/3351095.3372873." rel="noopener">10.1145/3351095.3372873.</a></p>
+<p class="reference-entry">Rakova, B., Yang, J., Cramer, H., &amp; Chowdhury, R. (2021). Where responsible AI meets reality: Practitioner perspectives on enablers for shifting organizational practices. <em>Proceedings of the ACM on Human-Computer Interaction, 5</em>(CSCW1), Article 7. doi:<a href="https://doi.org/10.1145/3449081." rel="noopener">10.1145/3449081.</a></p>
+<p class="reference-entry">Selbst, A. D., Boyd, D., Friedler, S. A., Venkatasubramanian, S., &amp; Vertesi, J. (2019). Fairness and abstraction in sociotechnical systems. In <em>Proceedings of the Conference on Fairness, Accountability, and Transparency</em>, 59–68. doi:<a href="https://doi.org/10.1145/3287560.3287598." rel="noopener">10.1145/3287560.3287598.</a></p>
+<h3 id="practitioner-sources-consulted">Practitioner sources consulted</h3>
+<p class="section-opening reference-entry">Ayres, B. (2026, July 27). <em>Why written AI policies alone won’t protect your organization</em>. Teneo.</p>
+<p class="reference-entry">Cybermaniacs. (2026, February 12). <em>Why AI governance fails without human–AI work design</em>.</p>
+<p class="reference-entry">Ferretti, S. (2025, December 13). <em>Why policies alone, in their current form, will not save us</em>. LinkedIn.</p>
+<p class="reference-entry">Gilot, P. (2026, June 11). <em>AI governance is not a compliance problem. It is an architecture problem</em>. LinkedIn.</p>
+<p class="reference-entry">Kavanagh, J. (n.d.). <em>The design gap in AI governance</em>. AI Career Pro.</p>
+<p class="reference-entry">Meskarian, M. (2026, January 1). <em>Why AI governance efforts fail</em>. Medium.</p>
+<div class="article-end"><p class="eyebrow">Continue Reading</p><h2>AI governance becomes real through organizational capability</h2><p>This essay develops governance by design as the translation of policy into visibility, authority, meaningful human judgment, technical control, evidence, and learning.</p><a class="btn secondary" href="/writing/the-missing-control-loop/">Read “The Missing Control Loop”</a></div>
+</article></div></section>
+</main><footer class="site-footer"><div class="container footer-grid">
+<div><a class="footer-brand" href="/">Maziyar Bahrami</a><p>Research, writing, teaching, and data across technology, organizations, and society.</p></div>
+<div class="footer-links"><a href="/about/">Background</a><a href="/research/">Research</a><a href="/writing/">Writing</a><a href="/learning-r/">Learning R</a><a href="/cv/">CV</a><a href="/contact/">Contact</a></div>
+<div class="footer-social"><a href="mailto:mbahrami@luiss.it">Email</a><a href="https://www.linkedin.com/in/maziyar-bahrami-a68194337/" rel="noopener" target="_blank">LinkedIn <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><a href="https://scholar.google.com/citations?hl=en&amp;user=Ahew2LoAAAAJ" rel="noopener" target="_blank">Google Scholar <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><a href="https://github.com/mazbahrami" rel="noopener" target="_blank">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6"></path></svg></a><span class="muted">Rome, Italy</span></div>
+</div><div class="container footer-bottom"><span>© <span data-year="">2026</span> Maziyar Bahrami</span><span>Rome, Italy</span></div></footer><script defer src="/assets/js/main.js"></script></body></html>
