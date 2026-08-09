@@ -1,0 +1,233 @@
+/*
+  Site-wide typography & horizontal alignment — v13
+
+  Goal:
+  - Use true paragraph justification on desktop for substantial body copy.
+  - Keep headings, metadata, buttons, labels, dates, short UI copy, and
+    narrow mobile text naturally aligned.
+  - Make heading scale and line width more consistent across the site.
+  - Load after every page-specific stylesheet so this file is the final
+    typography/alignment authority.
+
+  Note:
+  On mobile, body copy intentionally returns to left alignment because
+  full justification on narrow screens creates excessive word spacing.
+*/
+
+html body{
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
+}
+
+/* Headings: use the font that is actually loaded on every page. */
+html body h1,
+html body h2,
+html body h3{
+  font-family:var(--serif);
+}
+
+/* Generic interior-page headings: calmer and consistent. */
+html body .page-hero h1{
+  font-size:clamp(2.65rem,4.4vw,4.05rem)!important;
+  line-height:1.07!important;
+  letter-spacing:-.035em!important;
+  max-width:920px;
+}
+
+html body .article-hero h1{
+  font-size:clamp(2.75rem,4.8vw,4.4rem)!important;
+  line-height:1.07!important;
+  letter-spacing:-.038em!important;
+}
+
+html body .section-heading h2{
+  font-size:clamp(1.82rem,2.9vw,2.6rem)!important;
+  line-height:1.14!important;
+}
+
+html body .featured-writing-copy h2{
+  font-size:clamp(2rem,3.25vw,3rem)!important;
+  line-height:1.1!important;
+}
+
+/* More consistent content rhythm on legacy/general pages. */
+html body .page-hero .narrow{
+  max-width:820px;
+}
+
+html body .writing-intro-grid,
+html body .contact-grid{
+  gap:72px!important;
+}
+
+/* ---------------------------------------------
+   DESKTOP / TABLET: JUSTIFIED LONG-FORM BODY COPY
+   --------------------------------------------- */
+@media (min-width: 769px){
+
+  /* Homepage */
+  html body.home-page .hero-lead,
+  html body.home-page .intro-prose p,
+  html body.home-page .research-grid p:not(.eyebrow),
+  html body.home-page .featured-writing-copy > p:not(.eyebrow):not(.featured-deck),
+  html body.home-page .teaching-home-grid > div > p:not(.eyebrow),
+  html body.home-page .teaching-course-preview p:not(.kicker),
+
+  /* Profile */
+  html body.profile-page .profile-hero-lead,
+  html body.profile-page .profile-summary-text,
+  html body.profile-page .profile-background-copy p,
+  html body.profile-page .record-entry p:not(.record-place),
+  html body.profile-page .research-entry p,
+  html body.profile-page .profile-skill-grid p,
+
+  /* Research */
+  html body.research-page .research-lead,
+  html body.research-page .research-section-head > p,
+  html body.research-page .focus-card > p,
+  html body.research-page .work-card > p,
+  html body.research-page .research-logic-copy > p:not(.eyebrow),
+
+  /* Teaching */
+  html body.teaching-page .teaching-hero .page-lead,
+  html body.teaching-page .course-description,
+
+  /* Writing index */
+  html body .writing-hero .page-lead,
+  html body .featured-writing-copy > p:not(.eyebrow):not(.featured-deck),
+  html body .writing-archive-card > p,
+  html body .writing-intro-grid .prose p,
+  html body .topic-card > p,
+
+  /* Contact */
+  html body .contact-grid > div:first-child > .page-lead,
+  html body .contact-card > p,
+
+  /* Essays / article pages */
+  html body .article-body p,
+  html body .article-body li,
+  html body .essay-article-body p,
+  html body .essay-article-body li,
+  html body .article-end p:not(.eyebrow),
+
+  /* Legacy substantial prose that may still appear on older pages */
+  html body .prose p,
+  html body .long-prose p,
+  html body .career-content p:not(.kicker),
+  html body .research-streams p,
+  html body .project-summary,
+  html body .project-columns p,
+  html body .mini-projects p,
+  html body .cv-profile,
+  html body .cv-note,
+  html body .cv-skill-groups p
+  {
+    text-align:justify!important;
+    text-align-last:left!important;
+    text-justify:inter-word!important;
+    hyphens:auto!important;
+    -webkit-hyphens:auto!important;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+}
+
+/* -------------------------------------------------
+   ELEMENTS THAT SHOULD NOT BE FULLY JUSTIFIED
+   ------------------------------------------------- */
+
+/* Small labels and metadata */
+html body .eyebrow,
+html body .kicker,
+html body .writing-meta,
+html body .publication-type,
+html body .record-place,
+html body .record-date,
+html body .profile-role,
+html body .course-meta,
+html body .work-topline,
+html body .research-work-meta,
+html body .timeline-label,
+html body .journey-period,
+html body .visual-label{
+  text-align:left!important;
+  text-align-last:auto!important;
+  hyphens:none!important;
+}
+
+/* Dates remain visually scannable in CV/profile records. */
+html body.profile-page .record-date,
+html body.profile-page .profile-awards span{
+  text-align:right!important;
+}
+
+/* Short UI/support copy should remain natural rather than stretched. */
+html body .profile-card-body > p:not(.kicker),
+html body .profile-facts strong,
+html body .profile-facts span,
+html body .course-visual,
+html body .course-flow,
+html body .featured-writing-visual p,
+html body .policy-feature-visual p,
+html body .resource-list,
+html body .contact-method,
+html body .footer-grid p,
+html body .footer-links,
+html body .footer-social,
+html body .reference-entry{
+  text-align:left!important;
+  text-align-last:auto!important;
+  hyphens:none!important;
+}
+
+/* Deliberately centered CTA sections keep their visual role. */
+html body .contact-cta,
+html body .contact-cta p{
+  text-align:center!important;
+  text-align-last:auto!important;
+  hyphens:none!important;
+}
+
+/* Tables should never be justified. */
+html body th,
+html body td{
+  text-align:left!important;
+  text-align-last:auto!important;
+  text-justify:auto!important;
+  hyphens:none!important;
+}
+
+/* ---------------------------------------------
+   MOBILE: LEFT ALIGN TO AVOID LARGE WORD GAPS
+   --------------------------------------------- */
+@media (max-width: 768px){
+  html body p,
+  html body li,
+  html body dd,
+  html body blockquote{
+    text-align:left!important;
+    text-align-last:auto!important;
+    text-justify:auto!important;
+    hyphens:none!important;
+    -webkit-hyphens:none!important;
+  }
+
+  html body.profile-page .record-date,
+  html body.profile-page .profile-awards span{
+    text-align:left!important;
+  }
+
+  html body .contact-cta,
+  html body .contact-cta p{
+    text-align:center!important;
+  }
+
+  html body .page-hero h1{
+    font-size:clamp(2.35rem,10.5vw,3.3rem)!important;
+  }
+
+  html body .article-hero h1{
+    font-size:clamp(2.45rem,11vw,3.5rem)!important;
+  }
+}
