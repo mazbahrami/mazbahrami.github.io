@@ -10,11 +10,12 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entr
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 document.querySelectorAll('pre').forEach(pre=>{const btn=document.createElement('button');btn.className='code-copy';btn.type='button';btn.textContent='Copy';btn.addEventListener('click',async()=>{await navigator.clipboard.writeText(pre.innerText);btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy',1400)});pre.style.position='relative';btn.style.cssText='position:absolute;right:10px;top:10px;border:1px solid #445;background:#1b272b;color:#fff;border-radius:8px;padding:5px 9px;cursor:pointer';pre.appendChild(btn)});
 
-/* Site-wide navigation migration: Learning R -> Teaching.
-   This keeps older static pages consistent without rewriting every HTML file. */
+/* Site-wide navigation migrations. */
 document.querySelectorAll('a[href="/learning-r/"]').forEach(link=>{
   link.setAttribute('href','/teaching/');
-  if(link.textContent.trim()==='Learning R'){
-    link.textContent='Teaching';
-  }
+  if(link.textContent.trim()==='Learning R') link.textContent='Teaching';
 });
+document.querySelectorAll('a[href="/about/"]').forEach(link=>{
+  if(link.textContent.trim()==='Background') link.textContent='Profile';
+});
+document.querySelectorAll('.site-nav a[href="/cv/"], .footer-links a[href="/cv/"]').forEach(link=>link.remove());
