@@ -1,0 +1,50 @@
+/*
+  MB human-intelligence brand mark — v14
+  Uses the selected dark-teal / ivory / aqua avatar icon.
+*/
+
+.brand{
+  gap:13px!important;
+}
+
+.brand-mark{
+  width:44px!important;
+  height:44px!important;
+  flex:0 0 44px;
+  display:block!important;
+  border-radius:13px!important;
+  background:
+    url('/assets/images/mb-avatar.png')
+    center / cover no-repeat!important;
+  color:transparent!important;
+  font-size:0!important;
+  line-height:0!important;
+  overflow:hidden;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb,var(--line) 76%,transparent),
+    0 5px 16px rgba(19,39,45,.09);
+}
+
+.brand-name{
+  font-family:'Newsreader',Georgia,'Times New Roman',serif!important;
+  font-size:1.08rem!important;
+  font-weight:650!important;
+  letter-spacing:-.012em;
+}
+
+@media(max-width:680px){
+  .brand{
+    gap:10px!important;
+  }
+
+  .brand-mark{
+    width:40px!important;
+    height:40px!important;
+    flex-basis:40px;
+    border-radius:12px!important;
+  }
+
+  .brand-name{
+    font-size:1rem!important;
+  }
+}
