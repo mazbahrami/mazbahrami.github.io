@@ -6,6 +6,33 @@ if(!document.querySelector('link[href="/assets/css/site-alignment.css"]')){
   document.head.appendChild(alignmentStylesheet);
 }
 
+/* Load the selected MB human-intelligence brand mark globally. */
+if(!document.querySelector('link[href="/assets/css/brand-logo.css"]')){
+  const brandStylesheet=document.createElement('link');
+  brandStylesheet.rel='stylesheet';
+  brandStylesheet.href='/assets/css/brand-logo.css';
+  document.head.appendChild(brandStylesheet);
+}
+
+/* Add modern icon metadata without requiring every static HTML page to be edited. */
+const ensureIcon=(rel,href,sizes,type)=>{
+  if(!document.querySelector(`link[rel="${rel}"][href="${href}"]`)){
+    const link=document.createElement('link');
+    link.rel=rel;
+    link.href=href;
+    if(sizes) link.sizes=sizes;
+    if(type) link.type=type;
+    document.head.appendChild(link);
+  }
+};
+ensureIcon('icon','/assets/images/favicon-48.png','48x48','image/png');
+ensureIcon('apple-touch-icon','/assets/images/apple-touch-icon.png','180x180','image/png');
+
+document.querySelectorAll('.brand-mark').forEach(mark=>{
+  mark.textContent='';
+  mark.setAttribute('aria-hidden','true');
+});
+
 const root=document.documentElement;
 const themeButton=document.querySelector('.theme-toggle');
 themeButton?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next)});
