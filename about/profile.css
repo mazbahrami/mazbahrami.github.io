@@ -1,7 +1,7 @@
 /* Profile + CV combined page — v12 */
 .profile-page{--serif:'Newsreader',Georgia,'Times New Roman',serif}
 .profile-page h1,.profile-page h2,.profile-page h3{font-family:var(--serif);font-weight:600;text-wrap:balance}
-.profile-page p,.profile-page li,.profile-page dd{ text-align:left!important; text-justify:auto!important; hyphens:none!important; }
+
 .profile-hero{padding:72px 0 48px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,color-mix(in srgb,var(--accent-soft) 34%,transparent),transparent)}
 .profile-hero-inner{max-width:780px}.profile-hero h1{margin:0 0 14px;font-size:clamp(2.7rem,4.4vw,3.95rem);line-height:1.04;letter-spacing:-.036em}.profile-hero-lead{max-width:680px;margin:0;color:var(--muted);font-size:1.06rem;line-height:1.72}
 .profile-summary-section{padding:70px 0 78px}.profile-summary-card{display:grid;grid-template-columns:250px minmax(0,1fr);overflow:hidden;border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:0 16px 48px rgba(19,39,45,.08)}
