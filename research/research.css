@@ -38,8 +38,6 @@
   color:var(--muted);
   font-size:1.1rem;
   line-height:1.74;
-  text-align:left;
-  hyphens:none;
 }
 
 .research-section{
@@ -73,8 +71,6 @@
   color:var(--muted);
   font-size:.98rem;
   line-height:1.72;
-  text-align:left;
-  hyphens:none;
 }
 
 .focus-grid{
@@ -112,8 +108,6 @@
   color:var(--muted);
   font-size:.94rem;
   line-height:1.68;
-  text-align:left;
-  hyphens:none;
 }
 
 .tag-row-compact,
@@ -182,8 +176,6 @@
   color:var(--muted);
   font-size:.96rem;
   line-height:1.74;
-  text-align:left;
-  hyphens:none;
 }
 
 .research-logic-grid{
@@ -208,8 +200,6 @@
   color:var(--muted);
   font-size:.98rem;
   line-height:1.74;
-  text-align:left;
-  hyphens:none;
 }
 
 .research-map-wrap{
@@ -256,15 +246,6 @@
 
 .research-page .site-footer{
   padding-top:54px;
-}
-
-/* Avoid justification inherited from the legacy stylesheet */
-.research-page p,
-.research-page li,
-.research-page dd{
-  text-align:left!important;
-  text-justify:auto!important;
-  hyphens:none!important;
 }
 
 @media(max-width:980px){
