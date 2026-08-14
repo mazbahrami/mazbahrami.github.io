@@ -73,9 +73,6 @@
   font-size:1.15rem;
   line-height:1.75;
   color:var(--muted);
-  text-align:left!important;
-  text-justify:auto!important;
-  hyphens:none!important;
 }
 
 .home-page .hero-actions{
@@ -131,9 +128,6 @@
 .home-page .intro-prose p{
   max-width:68ch;
   line-height:1.78;
-  text-align:left!important;
-  text-justify:auto!important;
-  hyphens:none!important;
 }
 
 .home-page .text-link{
@@ -153,7 +147,6 @@
   max-width:60ch;
   font-size:1.02rem;
   line-height:1.75;
-  text-align:left;
 }
 
 .home-page .research-topic-list{
@@ -192,9 +185,6 @@
 .home-page .featured-writing-copy>p{
   max-width:64ch;
   line-height:1.76;
-  text-align:left!important;
-  text-justify:auto!important;
-  hyphens:none!important;
 }
 
 .home-page .featured-deck{
@@ -218,46 +208,6 @@
   padding:9px 11px;
   border-radius:10px;
   font-size:.92rem;
-}
-
-/* Learning R */
-.home-page .learning-home-grid{
-  display:grid;
-  grid-template-columns:minmax(0,560px) minmax(360px,1fr);
-  gap:72px;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.home-page .learning-home-grid>div:first-child>p:not(.eyebrow){
-  max-width:62ch;
-  line-height:1.76;
-  color:var(--muted);
-  text-align:left;
-}
-
-.home-page .learning-home-steps{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-  padding:28px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:var(--surface);
-}
-
-.home-page .learning-home-steps span{
-  font-family:var(--serif);
-  font-weight:600;
-  font-size:1rem;
-}
-
-.home-page .learning-home-steps i{
-  font-style:normal;
-  color:var(--accent);
-  font-weight:700;
 }
 
 /* Contact: restrained final section */
@@ -380,7 +330,6 @@
   max-width:52ch;
   color:var(--muted);
   line-height:1.75;
-  text-align:left;
 }
 
 .home-page .teaching-course-preview{
@@ -404,7 +353,6 @@
   max-width:48ch;
   color:var(--muted);
   line-height:1.65;
-  text-align:left;
 }
 
 .home-page .course-preview-arrow{
@@ -439,3 +387,4 @@
     gap:18px;
   }
 }
+\n/* Policy visual is local to the homepage; article CSS is not needed here. */\n.home-page .policy-feature-visual{background:var(--accent-dark);color:#fff}.home-page .policy-visual-path{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:34px 0 22px}.home-page .policy-visual-path b{padding:9px 11px;border:1px solid rgba(255,255,255,.25);border-radius:10px;font-size:.92rem}.home-page .policy-visual-path i{font-style:normal;color:#bfe3e4}\n
